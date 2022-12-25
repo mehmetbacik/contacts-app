@@ -4,6 +4,16 @@
     padding: 20px 100px;
 }
 
+#list ul {
+    padding: 0;
+}
+
+#list ul li {
+    background-color: #dabca6;
+    border-bottom: solid 1px #ffffff;
+    list-style-type: none;
+ }
+
 @media screen and (max-width: 425px) {
     #content {
         padding: 20px 50px;

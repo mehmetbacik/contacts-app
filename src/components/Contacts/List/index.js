@@ -8,7 +8,7 @@ function List ({contacts}) {
         );
     });
     return (
-        <div>
+        <div id="list">
             <input placeholder="Filter Contact" value={filterText} onChange={(e) => setFilterText(e.target.value)}/>
 
             <ul>
