@@ -9,8 +9,9 @@ function List ({contacts}) {
     });
     return (
         <div id="list">
-            <input placeholder="Filter Contact" value={filterText} onChange={(e) => setFilterText(e.target.value)}/>
-
+            <div className="filter">
+                <input placeholder="Filter Contact" value={filterText} onChange={(e) => setFilterText(e.target.value)}/>
+            </div>
             <ul>
              {
                 filtered.map((contact, i) => (

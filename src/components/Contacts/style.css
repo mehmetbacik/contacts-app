@@ -4,6 +4,7 @@
     --font: 'Montserrat', sans-serif;
     --color1: #ffffff;
     --color2: #dabca6;
+    --color3: #f2bc0f;
 }
 
 body {
@@ -14,18 +15,51 @@ body {
     background-color: var(--color1);
     border-radius: 20px;
     width: 500px;
+    margin: 50px;
 }
 
 #content h1 {
     text-align: center;
     font-size: 25px;
     font-weight: 500;
+    margin-top: 30px;
 }
 
 #content form {
     border-radius: 0px 0px 20px 20px;
-    padding: 10px;
+    padding: 15px 15px;
     background-color: var(--color2);
+}
+
+#content form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#content form .buttonarea {
+    text-align: right;
+    margin-top: 5px;
+}
+
+#content form .buttonarea button {
+    padding: 12px 20px;
+    border: 1px solid var(--color1);
+    border-radius: 4px;
+    background-color: var(--color3);
+    color: var(--color1);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#content form .buttonarea button:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+    cursor: pointer;
 }
 
 #list ul {
@@ -54,7 +88,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
-    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
     height: 30px;
     margin-right: 15px;
 }
@@ -67,6 +102,20 @@ body {
     text-align: right;
     font-weight: bold;
     font-size: 16px;
+}
+
+#list .filter input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} 
+
+#list .filter {
+    padding: 10px;
 }
 
 @media screen and (max-width: 425px) {
